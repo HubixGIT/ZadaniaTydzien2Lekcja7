@@ -113,13 +113,63 @@
 ////****************************************************************************************************
 Console.WriteLine("exercise 7\n");
 
-Console.WriteLine("Put in your height in cm");
+Console.WriteLine("Type in 3 integer numbers");
 string m = Console.ReadLine();
 int num1 = 0;
 Int32.TryParse(m, out num1);
 string s = Console.ReadLine();
 int num2 = 0;
-Int32.TryParse(s out num2);
+Int32.TryParse(s, out num2);
 string d = Console.ReadLine();
 int num3 = 0;
 Int32.TryParse(d, out num3);
+
+if(num1 == num2 && num1 == num3)
+{
+    Console.WriteLine("All the numbers are the same");
+}
+else if(num1 == num2)
+{
+    if(num1 > num3)
+    {
+        Console.WriteLine("Number 1 and 2: \"" + num1 + "\" are equal and are greater than \"" + num3 + "\"");
+    }
+    else
+    {
+        Console.WriteLine("Number 3: \"" + num3 + "\" is the largest number");
+    }
+}
+else if (num1 == num3)
+{
+    if (num1 > num2)
+    {
+        Console.WriteLine("Number 1 and 3: \"" + num1 + "\" are equal and are greater than \"" + num2 + "\"");
+    }
+    else
+    {
+        Console.WriteLine("Number 2: \"" + num2 + "\" is the largest number");
+    }
+}
+else if (num2 == num3)
+{
+    if (num2 > num1)
+    {
+        Console.WriteLine("Number 2 and 3: \"" + num2 + "\" are equal and are greater than \"" + num1 + "\"");
+    }
+    else
+    {
+        Console.WriteLine("Number 1: \"" + num1 + "\" is the largest number");
+    }
+}
+else if(num1 > num2 && num1 > num3)
+{
+    Console.WriteLine("Number 1: \"" + num1 + "\" is the largest number");
+}
+else if(num2 > num1 && num2 > num3)
+{
+    Console.WriteLine("Number 2: \"" + num2 + "\" is the largest number");
+}
+else if (num3 > num1 && num3 > num2)
+{
+    Console.WriteLine("Number 3: \"" + num3 + "\" is the largest number");
+}
