@@ -199,3 +199,176 @@
 //{
 //    Console.WriteLine("Sorry, your results aren't sufficient enough.");
 //}
+//****************************************************************************************************
+//Console.WriteLine("exercise 9\n");
+
+//Console.WriteLine("Please put in the current tempature: ");
+//string temp = Console.ReadLine();
+//int t;
+//t = Convert.ToInt32(temp);
+
+//if(t < 0)
+//{
+//    Console.WriteLine("It's freezing");
+//}
+//else if(t >= 0 && t < 10)
+//{
+//    Console.WriteLine("It's cold");
+//}
+//else if (t >= 10 && t < 20)
+//{
+//    Console.WriteLine("It's chilly");
+//}
+//else if (t >= 20 && t < 30)
+//{
+//    Console.WriteLine("It's ok");
+//}
+//else if (t >= 30 && t < 40)
+//{
+//    Console.WriteLine("It's getting hot");
+//}
+//else if (t >= 40)
+//{
+//    Console.WriteLine("It's boiling hot at this point");
+//}
+//****************************************************************************************************
+//Console.WriteLine("exercise 10\n");
+//int a;
+//int b;
+//int c;
+//Console.WriteLine("Please enter 3 sides of a triangle: ");
+//string aString = Console.ReadLine();
+//a = Convert.ToInt32(aString);
+//string bString = Console.ReadLine();
+//b = Convert.ToInt32(bString);
+//string cString = Console.ReadLine();
+//c = Convert.ToInt32(cString);
+
+//if(a > b && a > c)
+//{
+//    if(a < b + c)
+//    {
+//        Console.WriteLine("A triangle can be made");
+//    }
+//    else
+//    {
+//        Console.WriteLine("A triangle can't be made");
+//    }
+//}
+//else if(b > a && b > c)
+//{
+//    if (b < a + c)
+//    {
+//        Console.WriteLine("A triangle can be made");
+//    }
+//    else
+//    {
+//        Console.WriteLine("A triangle can't be made");
+//    }
+//}
+//else if(c > a && c > b)
+//{
+//    if (c < b + a)
+//    {
+//        Console.WriteLine("A triangle can be made");
+//    }
+//    else
+//    {
+//        Console.WriteLine("A triangle can't be made");
+//    }
+//}
+//else
+//{
+//    Console.WriteLine("A triangle can't be made");
+//}
+//****************************************************************************************************
+//Console.WriteLine("exercise 11\n");
+
+//Console.WriteLine("Wpisz jaka ocene dostałeś od 1-6");
+//string grade = Console.ReadLine();
+
+//switch(grade)
+//{
+//    case "1":
+//        Console.WriteLine("Niedostateczny");
+//        break;
+//    case "2":
+//        Console.WriteLine("Dopuszczający");
+//        break;
+//    case "3":
+//        Console.WriteLine("Dostatecznie");
+//        break;
+//    case "4":
+//        Console.WriteLine("Dobry");
+//        break;
+//    case "5":
+//        Console.WriteLine("Bardzo dobry");
+//        break;
+//    case "6":
+//        Console.WriteLine("Celujący");
+//        break;
+//}
+//****************************************************************************************************
+//Console.WriteLine("exercise 12\n");
+
+//Console.WriteLine("Wpisz jakiś dzień tygodnia od 1-7");
+//string weekDay = Console.ReadLine();
+
+//switch (weekDay)
+//{
+//    case "1":
+//        Console.WriteLine("Poniedziałek");
+//        break;
+//    case "2":
+//        Console.WriteLine("Wtorek");
+//        break;
+//    case "3":
+//        Console.WriteLine("Środa");
+//        break;
+//    case "4":
+//        Console.WriteLine("Czwartek");
+//        break;
+//    case "5":
+//        Console.WriteLine("Piątek");
+//        break;
+//    case "6":
+//        Console.WriteLine("Sobota");
+//        break;
+//    case "7":
+//        Console.WriteLine("Niedziela");
+//        break;
+//}
+//****************************************************************************************************
+Console.WriteLine("exercise 13\n");
+float numb1;
+float numb2;
+float answer;
+Console.WriteLine("Please type in 2 numbers: ");
+string number1 = Console.ReadLine();
+string number2 = Console.ReadLine();
+
+numb1 = float.Parse(number1);
+numb2 = float.Parse(number2);
+
+Console.WriteLine("Please choose a mathematical operation. \n 1.Add \n 2.Subtract \n 3.Multiplication \n 4.Division");
+string choice = Console.ReadLine();
+
+switch(choice)
+{
+    case "1":
+        answer = numb1 + numb2;
+        Console.WriteLine("The answer for addition is: " + answer);
+        break;
+    case "2":
+        answer = numb1 - numb2;
+        Console.WriteLine("The answer for subtraction is: " + answer);
+        break;
+    case "3":
+        answer = numb1 * numb2;
+        Console.WriteLine("The answer for multiplication is: " + answer);
+        break;
+    case "4":
+        answer = numb1 / numb2;
+        Console.WriteLine("The answer for division is: " + answer);
+        break;
+}
